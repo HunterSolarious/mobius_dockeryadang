@@ -1,36 +1,38 @@
 # Mobius_Docker Installation
 
+**note that i removed sudo for those who already in admin privilege so i reccomend being in root first before using my version of the scripts.
+
 **1. Download Mobius_Docker from KETI's git repository**
 
-    sudo git clone https://github.com/IoTKETI/Mobius_Docker.git
+     git clone https://github.com/IoTKETI/Mobius_Docker.git
     cd Mobius_Docker
 
 **2. Execute "install.sh"**
 
-    sudo ./instatll.sh
+     ./instatll.sh
     
 **3. Execute "run.sh"**
 
-    sudo ./run.sh
+     ./run.sh
     
 **4. Test using cURL**
 
-    sudo ./test.sh
+     ./test.sh
   
   
 **You can follows below commands for each objective**
     
     Stop mobius docker containers 
-    "sudo ./stop.sh"
+    " ./stop.sh"
     
     Remove mobius docker containers
-    "sudo ./remove.sh"
+    " ./remove.sh"
 
     Check status of mobius docker containers
-    "sudo ./status.sh"
+    " ./status.sh"
 
     Show logs of mobius docker containers
-    "sudo ./logs.sh"
+    " ./logs.sh"
 
 
 # Snapshot of normal running Mobius docker 
@@ -45,7 +47,7 @@ In the snapshot, left console shows response of "Retrieve CES Resource" and righ
 
  DB
  
-    image: mysql:latest    # Import the mysql docker image stored in the Docker-Hub.
+    image: mysql:8.0    # dont use the latest as to avoid complications (new version have different variables).
     environment:        # This is the mysql environment variable setting.
       MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
       MYSQL_ROOT_PASSWORD: "dksdlfduq2"
@@ -93,5 +95,6 @@ In the snapshot, left console shows response of "Retrieve CES Resource" and righ
 ## Authors
 
 * **JongGwan An** - *Initial work* - [Cftn] (https://github.com/Cftn) (jg.an@keti.re.kr, jg.an.1182@gmail.com)
+* **Yadang Iskandar** - *just edited some stuff, i am just a student i dont own mobius or anything pls dont think im stealing or something* (https://github.com/yadangsol) (adam.nizam01@s.unikl.edu.my)
 
 
