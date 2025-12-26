@@ -14,7 +14,7 @@ git clone https://github.com/IoTKETI/Mobius.git
 
 cd Mobius
 
-sudo npm install
+npm install
 
 cd ..
 
